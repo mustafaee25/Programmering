@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Intro</title>
+</head>
+<body>
+  <script src="http://koda.nu/simple.js">
+//   var age = 14 
+// if (age >= 15 ) {
+//       console.log ("du får köpa energidrick ")
+// } else {
+//   ("Du får inte köpa ") 
+
+// }
+
+
+var player = {x: 50,y: 200, size: 40, bounces: 0, color: "blue", speedX: 3, direction: 1 };
+
+
+
+var x = 0 
+function update() { 
+  clearScreen();
+ 
+  picture(x, 0, "https://shorturl.at/9F9lR", totalWidth * 2, totalHeight)
+  x--
+   text(50, 50, 40, "Antal: " + player.bounces, "white")
+  circle(player.x, player.y,player.size, player.color);
+  player.y = player.y + player.speedX * player.direction;
+  player.x = player.x + player.speedX * player.direction;
+
+   // om cirkeln träffar höger kant, så ändras färdriktning till vänster 
+  if (player.x + player.size > totalWidth ) {
+    player.bounces++
+        player.direction = -1
+        player.color = "red"
+        player.x = random (0, totalWidth )
+  }
+// om cirkeln träffar vänster kant, så ändras färdriktining till höger 
+if (player.x - player.size < 0) {
+     player.direction = 1 
+     player.bounces++
+     player.Y-- 
+     console.log(player.y )   
+
+
+
+
+}
+
+
+}
+
+
+
+
+  </script>
+</body>
+</html
