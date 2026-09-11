@@ -1,0 +1,51 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Intro</title>
+</head>
+<body>
+  <script src="http://koda.nu/simple.js">
+    
+function update () {
+}
+
+if(player.y < 0) {
+player.directionY = 1
+player.color = mixColor(random(256), random(256), random(256), random(256))
+
+
+
+}
+
+
+if (player.x + player.size > totalWidth) {
+            player.direction = -1
+            player.size = random (20, 60)
+        }
+        if (player.x + player.size < 0) {
+            player.direction = 1
+            player.color = mixColor (random(256), random(256), random(256))
+        }
+        if (player.y - player.size < 0 ) {
+            player.directionY = 1
+            player.speedX = random (10, 20)
+            player.speedY = random (10, 20)
+        }
+        if (player.y + player.size > totalHeight) {
+          player.directionY = -1
+          if (player.directionX == 0) {
+            player.directionX = random(-1, 1)
+
+
+
+
+
+
+  </script>
+</body>
+</html>
