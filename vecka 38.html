@@ -1,0 +1,83 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Intro</title>
+</head>
+<body>
+  <script src="http://koda.nu/simple.js">
+    
+
+    var player = { x: 400, y: 300, size: 40, color: "blue", speed: 4 } ;
+
+    function update() {
+      clearScreen();
+      circle(player.x, player.y, player.size, player. color);
+      text(50, 50, 40, "x är: " + player.x + " y är: " + player.y)
+      if (keyboard.a) { 
+      player.x = player.x - player.speed;
+
+
+      }
+
+    if (keyboard.d) {
+      player.x = player.x + player.speed;
+    }
+
+
+    if (keyboard.w) {
+        player.y = player.y - player.speed;
+    }
+
+    if (keyboard.s) {
+        player.y = player.y  + player.speed;
+    }
+
+if ( player.x + player.size > totalWidth)  { 
+    player.x = totalWidth - player.size; 
+};
+
+if(player.x - player. size < 0) {
+    player.x = 0 + player.size
+} 
+
+if( player.y - player. size <0 ) {
+player.y = 0 + player.size
+
+}
+if(player.y + player.size > totalHeight) {
+    player.y = totalHeight - player.size
+}
+ if (keyboard.space) {
+    player.speed  = player.speed * 2  
+ }else{
+player.speed = 5
+
+ }
+
+ if(player.x > totalWidth - 100) {
+    text(50, 100, 40, "närmst")
+     player.speed - 1
+
+ } else if(player.x > totalWidth - 300) {
+    text (50, 100, 40, "Närmre")
+     player.speed - 1
+
+ } else if (player.x > totalWidth - 600) {
+    text(50, 100, 40, "Nära")
+    player.speed - 1
+
+ }
+    
+ }
+
+
+
+
+
+  </script>
+</body>
+</html
