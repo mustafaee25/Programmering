@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Intro</title>
+</head>
+<body>
+  <script src="http://koda.nu/simple.js">
+   
+
+if (keyboard.right) {
+    player.x = player.x + player.speed;
+
+}
+<!DOCTYPE html>
+ 
+<html lang="en">
+ 
+<head>
+ 
+  <meta charset="UTF-8">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <title>JavaScript Intro</title>
+ 
+</head>
+ 
+<body>
+ 
+  <script src="http://koda.nu/simple.js">
+ 
+    var color = "red"
+ 
+    var size = 50
+ 
+ 
+ 
+    function update() {
+ 
+      if(mouse.left) {
+ 
+          circle(mouse.x, mouse.y, size, color)
+ 
+      }
+ 
+ 
+ 
+      if(mouse.right) {
+ 
+        circle(mouse.x, mouse.y, size, "white")
+ 
+      }
+ 
+ 
+ 
+      if(keyboard.one) {
+ 
+           color = "green"
+ 
+      }
+ 
+      if(keyboard.two) {
+ 
+        color = "red"
+ 
+      }
+ 
+      if(keyboard.three) {
+ 
+        color = "blue"
+ 
+      }
+ 
+      if(keyboard.up) {
+ 
+          size++
+ 
+      }
+ 
+      if(keyboard.down) {
+ 
+        size--
+ 
+        if(size < 1) {
+ 
+          size = 1
+ 
+        }
+ 
+      }
+ 
+ 
+ 
+      if(keyboard.q) {
+ 
+        rectangle(mouse.x, mouse.y, size, size, color)
+ 
+      }
+ 
+      if(keyboard.w){
+ 
+        
+ 
+      }
+ 
+ 
+ 
+ 
+ 
+      text(50, 50, 40, "Du målar med: " , "black")
+ 
+      circle(500, 35, 20, color)
+ 
+ 
+ 
+    }
+ 
+ 
+
+
+
+  </script>
+</body>
+</html>
