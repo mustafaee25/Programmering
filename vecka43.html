@@ -1,3 +1,12 @@
+//webbläsaren läser en rad i taget 
+// webbläsaren delar införmation till windows/macOS och då börjar Windows/macOS handerar minnen och processer.
+// processorn delar ut pixlarnas posistoner och grafikkortet skriver ut dom.
+// programmeringen kan användas i många appar och hemsidor.tillexempel youtube, aftonbladet och många andra hemsidor och appar.  de kan också användas för att skapa appar och hemsidor. 
+//Jag tycker att säkerhet på internet är viktigt eftersom jag inte vill att någon ska få reda på min privata information. Jag är orolig för att hemsidor kan bli hackade och att mina uppgifter kan läcka. Jag tycker att säkerhet alltid är viktigare än att appar och hemsidor är roliga och enkla att använda.
+
+när datorn beslut blir orättvisa på grund av snedvriden data hur algorimen är utformad 
+//det finns inget exakt antal rader kod. det beror på hur systemet är byggt, viket funktioner det har och hur många delar som ingår.
+exempelvis så när man växlar mellan rött,gult och grönt och då behövs cirka 50 kodrader
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,17 +79,18 @@ function update() {
     player.y = player.y + player.speed;
   }
 
-  if (zombie1.x < player.x) {
-    zombie1.x = zombie1.x + zombie1.speed;
-  }
-  if (zombie1.x > player.x) {
-    zombie1.x = zombie1.x - zombie1.speed;
-  }
-  if (zombie1.y < player.y) {
-    zombie1.y = zombie1.y + zombie1.speed;
-  }
-  if (zombie1.y > player.y) {
-    zombie1.y = zombie1.y - zombie1.speed;
+
+if (zombie1.x < player.x) {
+  zombie1.x += zombie1.speed;
+} else if (zombie1.x > player.x) {
+  zombie1.x -= zombie1.speed;
+}
+
+if (zombie1.y < player.y) {
+  zombie1.y += zombie1.speed;
+} else if (zombie1.y > player.y) {
+  zombie1.y -= zombie1.speed;
+}
   }
 
   if (distance(player, zombie1) < 65) {
