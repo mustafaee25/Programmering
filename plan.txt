@@ -1,0 +1,29 @@
+// ===== MIN PROJEKTPLAN =====
+// Spelidé: ( jag kommer att gör gta 2. det kommer vara en spelare sedan kommer spelaren att försöka gå över gatan utan att bli påkörd av bilar.
+ de kommer också vara fiande som kommer att försöka att döda spelaren.   )
+
+// --- SAKER JAG VILL ÖVA PÅ (utifrån tidigare feedback) ---
+// (Vad har du fått feedback om tidigare som du vill bli bättre på,
+//  eller något du aldrig hann klart med? Skriv in det här och se till
+//  att du övar på det i ditt spel under projektet.)
+// 1. I kapitel 2 behöver jag öva på if-satser.och i kapitel 3-4 behövde jag Fokusera på arrayer och funktioner.
+
+// --- MITT KRAV (måste finnas) ---
+// Antal spelare: 1
+// Antal fiender/hinder: 100
+// Mål (hur vinner/klarar man spelet?): spelaren kommer inte att vinna men där i mot kommer spelaren att förlora av bliare eller fiande.
+// Förlustvillkor (hur förlorar man?): altingen bli på körd eller att dö av fiande.
+
+// --- MIN REKOMMENDATION (bör finnas) ---
+// 1. i seplet kommer de finnas bilare.Jag kommer göra så att de finns bilar som kör framåt och bliar som kommer svänga höver eller vänster.
+// 2.  när spelaren blir på körd så kommer spelaren att dö. 
+
+// --- MIN UTMANING (kan finnas, om tid finns) ---
+// 1. aat försöka få bilarna att svänga 
+// 2. att försöa få fiande att hålla i ett vapen och skuta 
+
+// --- FÖRBÄTTRINGAR ATT GÖRA SEN ---
+// (Lägg till fler idéer här under hela projektet.
+//  Känner du dig klar med allt ovan? Kolla den här listan och börja på nästa.)
+// spelare som bara försöker att gå över gatan utan att förlora 
+// mario 
