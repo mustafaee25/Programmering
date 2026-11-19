@@ -11,7 +11,7 @@
 // --- MITT KRAV (måste finnas) ---
 // Antal spelare: 1
 // Antal fiender/hinder: 100
-// Mål (hur vinner/klarar man spelet?): spelaren kommer inte att vinna men där i mot kommer spelaren att förlora av bliare eller fiande.
+// Mål (hur vinner/klarar man spelet?): spelaren kommer inte att vinna men där i mot kommer spelaren att förlora av bliare.
 // Förlustvillkor (hur förlorar man?): altingen bli på körd eller att dö av fiande.
 
 // --- MIN REKOMMENDATION (bör finnas) ---
@@ -19,11 +19,36 @@
 // 2.  när spelaren blir på körd så kommer spelaren att dö. 
 
 // --- MIN UTMANING (kan finnas, om tid finns) ---
-// 1. aat försöka få bilarna att svänga 
-// 2. att försöa få fiande att hålla i ett vapen och skuta 
+// 1. att försöka få bilarna att svänga 
+// 2. att försöka skapa fiande som håller i ett vapen och skuta
+
 
 // --- FÖRBÄTTRINGAR ATT GÖRA SEN ---
 // (Lägg till fler idéer här under hela projektet.
 //  Känner du dig klar med allt ovan? Kolla den här listan och börja på nästa.)
-// spelare som bara försöker att gå över gatan utan att förlora 
+// spelare som bara försöker att gå över gatan utan att förlora...
 // mario 
+
+// När spelaren uppdateras: 
+om en spelaren krokar med en bil  
+    spelaren förlorar 
+    spelarens kordenater ändrar 
+    spelaren poäng nålas 
+    bilen återstäls 
+
+// När spelaren uppdateras:
+    om spelaren nudar gaten 
+    spelaren får poäng 
+    splaren blir på körd 
+    spelaren förlorar allt
+
+om man trycker W A S D
+    W spelarens y-koordinat minskar 
+    S spelarens y+koordinat ökar 
+    D spelarens X-koordinat minskar 
+    A spelarens X+koordinat ökar  
+
+
+
+
+
