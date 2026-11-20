@@ -8,8 +8,41 @@
 </head>
 <body>
   <script src="http://koda.nu/simple.js">
- rectangle (100, 100, 100 , 100, "red")
- rectangle (10, 10, 10 , 10,  "red")
+      var player = {
+    x: 100,
+    y: 300,
+    size: 20,
+    color: "blue",
+    speed: 4
+};
+function update() {
+  
+     fill("green")
+circle (100, 300, 20, "blue")
+ rectangle (0, totalHeight/3, totalWidth , 400, "black")
+ rectangle (750, 0, 400, 300,  "black")
+ 
+    circle(player.x, player.y, player.size, player.color);
+
+    
+    if (keyIsDown("LEFT")) {
+        player.x -= player.speed;
+    }
+
+    if (keyIsDown("RIGHT")) {
+        player.x += player.speed;
+    }
+
+    if (keyIsDown("UP")) {
+        player.y -= player.speed;
+    }
+
+    if (keyIsDown("DOWN")) {
+        player.y += player.speed;
+    }
+}
+
+
   </script>
 </body>
 </html>
